@@ -4,10 +4,6 @@ const testController = require('../Controllers/testController');
 
 const router = express.Router();
 
-router.route('/').get(testController.getAll).post(testController.createOne);
-router
-  .route('/:id')
-  .get(testController.getOne)
-  .patch(testController.update)
-  .delete(testController.delete);
+router.route('/').post(testController.createOne);
+
 module.exports = router;
