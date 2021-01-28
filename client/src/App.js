@@ -87,8 +87,8 @@ function App() {
     }
 
     setLoading(true);
-    const url = 'http://localhost:5000/api/test';
-    ///const url = 'https://ipt-lab.herokuapp.com/api/test';
+    //const url = 'http://localhost:5000/api/test';
+    const url = 'https://ipt-lab.herokuapp.com/api/test';
     axios
       .post(url, {
         itemBody: itemsName,
